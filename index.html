@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service Hotline</title>
 </head>
 <body>
-    
+    <!-- navbar starts here -->
+
+    <nav class="max-w-[1800px] mx-auto flex justify-between items-center py-6 font-[Inter] px-4 md:px-0">
+        <div class="flex items-center justify-between gap-[10px]">
+            <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
+            <h2 class="text-[#006747] font-black">Emergency <br>Service</h2>
+        </div>
+        <div class="flex-col sm:flex sm:flex-row justify-between items-center gap-5">
+            <div
+                class="w-[123px] h-[52px] bg-[rgba(65,255,107,0.1)] flex justify-center items-center rounded-[50px] gap-[10px]">
+                <span id="heart-count" class="text-[#000000] font-black">0</span>
+                <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
+            </div>
+            <div
+                class="w-[123px] h-[52px] bg-[rgba(65,255,107,0.1)] flex justify-center items-center rounded-[50px] gap-[10px] my-3 sm:my-0">
+                <span id="coin-container" class="text-[#000000] font-black">100</span>
+                <img class="w-6 h-6" src="./assets/coin.png" alt="">
+            </div>
+            <div
+                class="w-[123px] h-[52px] bg-[#00A63E] flex justify-center items-center rounded-[50px] gap-[10px] text-white font-semibold leading-6">
+                <span id="copy-counter">0</span>
+                <p>Copy</p>
+            </div>
+        </div>
+        <!-- <div class="block sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div> -->
+    </nav>
 </body>
 </html>
