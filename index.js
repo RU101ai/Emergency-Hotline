@@ -18,3 +18,44 @@ for (const heart of hearts) {
     heartCountElement.innerText = heartCount;
   });
 }
+
+
+const callButtons = document.querySelectorAll(".call-btn");
+const coinElement = document.getElementById("coin-container");
+let coins = parseInt(coinElement.innerText);
+const callHistoryContainer = document.getElementById("call-history");
+
+for (const btn of callButtons) {
+  btn.addEventListener("click", function () {
+    if (coins < 20) {
+      alert("Not enough coins to make a call!");
+      return;
+    }
+
+    coins -= 20;
+    coinElement.innerText = coins;
+
+    const card = btn.closest(".service-card");
+    const serviceName = card.querySelector(".service-name").innerText;
+    const serviceNumber = card.querySelector(".helpline-number").innerText;
+    const serviceTitle = card.querySelector(".service-title").innerText;
+
+    alert(`Calling ${serviceName} at ${serviceNumber}`);
+
+    const historyItem = document.createElement("div");
+
+    historyItem.innerHTML = `
+    
+        <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-lg">
+            <div>
+                <h3 class="font-[Inter] font-semibold text-[#111111]">${serviceTitle}</h3>
+                <p class="text-[#5C5C5C] text-[18px]">${serviceNumber}</p>
+            </div>
+            <p class="text-[18px] text-[#111111]">${new Date().toLocaleTimeString()}</p>
+        </div>
+
+    `;
+
+    callHistoryContainer.appendChild(historyItem);
+  });
+}
