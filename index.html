@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service Hotline</title>
-    <!-- Tailwind cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <!-- Google Fonts -->
+    <title>Emergency Service Directory</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-     <!-- DaisyUI cnd link -->
+
+    <!-- Tailwind cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- DaisyUI cnd link -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-
     <!-- font awesome cdn link -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
 </head>
+
 <body>
+
+
     <!-- navbar starts here -->
 
     <nav class="max-w-[1800px] mx-auto flex justify-between items-center py-6 font-[Inter] px-4 md:px-0">
@@ -48,23 +54,33 @@
                 <p>Copy</p>
             </div>
         </div>
+        <!-- <div class="block sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div> -->
     </nav>
 
-    <!-- Banner section starts here -->
+    <!-- navbar ends here -->
 
-    <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-[21px] font-[Hind_Madurai]">
+    <!-- hero section starts here -->
+
+    <section
+        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-[21px] font-[Hind_Madurai]">
         <img class="mx-auto w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
         <h1 class="font-bold text-[40px] text-white py-[11px]">Emergency Service Directory</h1>
         <p class="font-semibold text-[20px] text-white">Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh</p>
     </section>
+
+
+    <!-- hero section end here -->
+
+
     <!-- main section starts here -->
 
     <section class="bg-[#F5FFF6] font-[Hind_Madurai] pt-[48px] pb-[86px]">
         <div class="sm:flex justify-between max-w-[1800px] mx-auto gap-[30px]">
             <div class="grid sm:grid-cols-3 gap-[30px] justify-center sm:justify-between">
 
-                <!-- card-1 -->
                 <div class="service-card w-[436px] bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
 
                     <div class="flex justify-between items-center">
@@ -89,7 +105,7 @@
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
-                <!-- card-2 -->
+
                 <div class="service-card w-[436px] bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                     <div class="flex justify-between items-center ">
                         <div class="bg-[#FFE3E2] p-[14px] rounded-2xl">
@@ -113,7 +129,7 @@
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
-                <!-- card-3 -->
+
                 <div class="service-card w-[436px] bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                     <div class="flex justify-between items-center ">
                         <div class="bg-[#FFE3E2] p-[14px] rounded-2xl">
@@ -137,7 +153,7 @@
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
-                <!-- card-4 -->
+
                 <div class="service-card w-[436px] bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                     <div class="flex justify-between items-center ">
                         <div class="bg-[#FFE3E2] p-[14px] rounded-2xl">
@@ -258,7 +274,7 @@
                                 class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
-                <!-- card-9 -->
+
                 <div class="service-card w-[436px] bg-white p-8 rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                     <div class="flex justify-between items-center ">
                         <div class="bg-[#FFE3E2] p-[14px] rounded-2xl">
@@ -284,8 +300,9 @@
                 </div>
             </div>
 
-        <!--call History -->
-                    <div id="call-history-container" class="w-[450px] sm:w-[400px] bg-white p-6 rounded-xl mx-auto mt-3 sm:mt-0">
+
+            <div id="call-history-container"
+                class="w-[450px] sm:w-[400px] bg-white p-6 rounded-xl mx-auto mt-3 sm:mt-0">
                 <div class="flex justify-between items-center">
                     <p class="font-[Roboto] font-medium text-[20px] text-[#111111]"><i class="fa-regular fa-clock"></i>
                         Call History</p>
@@ -294,7 +311,7 @@
                 </div>
 
                 <div id="call-history">
-                    
+
                 </div>
 
 
@@ -302,5 +319,9 @@
         </div>
     </section>
 
+    <!-- main section ends here -->
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
